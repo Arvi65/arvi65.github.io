@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	text-align: center;
+}
+
+.title {
+	color: white;
+	font-size: 10em;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFD700, 0 0 70px #FFD700, 0 0 80px #FFD700, 0 0 100px #FFD700, 0 0 150px #FFD700;
+	animation: move 20s linear infinite;
+}
+
+@keyframes move {
+	0% {transform: translateY(0);}
+	100% {transform: translateY(-100vh);}
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	font-size: 1.2em;
+}
